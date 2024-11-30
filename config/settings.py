@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-y2c&qdo_y4=!g&wpk9a8_*i-!1gk1ohw4=ap9wl3!^wz^y$-dw'
+SECRET_KEY = 'your_key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'school_app',
+    'your_app',
     'rest_framework'
 ]
 
@@ -86,9 +86,9 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': "School_db",
-        'USER': "school_admin",
-        'PASSWORD': 'obid',
+        'NAME': "your_db",
+        'USER': "your_admin",
+        'PASSWORD': 'your_pasword',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
